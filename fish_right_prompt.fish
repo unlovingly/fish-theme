@@ -1,3 +1,3 @@
 function fish_right_prompt
-  # Customize the right prompt
+  echo (__fish_git_prompt "on %s")
 end
