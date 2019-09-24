@@ -10,7 +10,7 @@ function fish_prompt
   set -l statuses "$name$mood$host$time$c_wd"
 
   echo $statuses
-  echo "% "
+  echo (string join "" (fish_default_mode_prompt) "% ")
 end
 
 function __fish_prompt_print_status --argument-names code
